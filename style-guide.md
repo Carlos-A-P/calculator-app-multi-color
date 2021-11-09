@@ -90,4 +90,7 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Spartan', sans-serif;
 - Weights: 700
