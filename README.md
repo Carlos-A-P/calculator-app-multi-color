@@ -23,7 +23,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![desktop-design-theme-1](https://user-images.githubusercontent.com/85038929/140664834-b2c75af8-ae79-40e5-838d-2d27b1349b18.jpg
+![desktop-design-theme-1](https://user-images.githubusercontent.com/85038929/140664834-b2c75af8-ae79-40e5-838d-2d27b1349b18.jpg)
 
 ![desktop-design-theme-2](https://user-images.githubusercontent.com/85038929/140664839-4707d915-a004-4293-a2a8-e543a3ebfa62.jpg)
 
