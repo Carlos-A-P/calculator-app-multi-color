@@ -1,0 +1,88 @@
+@import "footer";
+@import "header";
+@import "themes";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Encode Sans Expanded", sans-serif;
+	font-family: "Kumbh Sans", sans-serif;
+	font-family: "Spartan", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	padding: 0 24px;
+}
+
+#wrapper {
+	max-width: 540px;
+	margin: 28px auto 2rem;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	fieldset {
+		border: none;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	legend {
+		display: contents;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	div:nth-child(3) {
+		margin: 0 10px;
+	}
+
+	h2 {
+		margin-right: 20px;
+	}
+
+	h2,
+	label {
+		font-size: 12px;
+		font-weight: bold;
+	}
+}
+
+.output {
+	height: 88px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 36px 0 24px;
+	padding: 26px 24px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.calculator-grid {
+	padding: 24px 24px;
+	border-radius: 10px;
+
+	button {
+		font-weight: bold;
+		font-size: 28px;
+		border: none;
+		border-radius: 5px;
+		padding: 11px 0;
+	}
+}

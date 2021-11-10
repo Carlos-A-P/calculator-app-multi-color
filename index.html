@@ -7,31 +7,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;700;800;900&family=Kumbh+Sans:wght@400;700&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="js/script.js" defer></script>
   <title>CPWD | Calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <div class="wrapper">
+<body class="dark">
+  <div id="wrapper">
     <header>
-      <h1><a href="https://github.com/Carlos-A-P/calculator-app-multi-color" target="_blank">calc</a></h1>
+      <h1 class="logo"><a href="https://github.com/Carlos-A-P/calculator-app-multi-color" target="_blank">calc</a></h1>
       <div class="right-header">  
-        <fieldset class="theme-selector-wrapper">
+        <fieldset class="theme-selector">
           <legend><h2>THEME</h2></legend>
-          <input type="radio" name="theme" id="dark" value="dark-theme" aria-label="Dark theme" checked>
-          <label for="dark">1</label>
-          <input type="radio" name="theme" id="light" value="light-theme" aria-label="Light theme">
-          <label for="dark">2</label>
-          <input type="radio" name="theme" id="purple" value="purple-theme" aria-label="Purple theme">
-          <label for="dark">3</label>
+          <div>
+            <input type="radio" name="theme" id="dark" value="dark-theme" aria-label="Dark theme" checked>
+            <label for="dark">1</label>            
+          </div>
+          <div>
+            <input type="radio" name="theme" id="light" value="light-theme" aria-label="Light theme">
+            <label for="light">2</label>            
+          </div>
+          <div>
+            <input type="radio" name="theme" id="purple" value="purple-theme" aria-label="Purple theme">
+            <label for="purple">3</label>            
+          </div>
         </fieldset>
       </div>
     </header>
     <main>
-      <div class="output" data-current-operand aria-label="output" tabindex="0">180</div>
+      <div class="output"><p data-current-operand tabindex="0" aria-label="output">180</p></div>
       <div class="calculator-grid" aria-label="Calculator Keypad">
         <button data-number>7</button>
         <button data-number>8</button>
@@ -49,8 +52,8 @@
         <button data-number>0</button>
         <button data-operation aria-label="divide">/</button>
         <button data-operation aria-label="multiply">x</button>
-        <button data-all-clear class="span-two">RESET</button>
-        <button data-equals class="span-two">=</button>
+        <button data-all-clear class="span-two reset-btn">RESET</button>
+        <button data-equals class="span-two equals-btn">=</button>
       </div>
       <div class="modal" aria-label="Calculator keypad instructions" tabindex="0" style='display: none'>
         <h3 class="modal-header">Keypad instructions</h2>

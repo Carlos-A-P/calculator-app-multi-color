@@ -1,0 +1,26 @@
+@import "colors";
+
+// dark theme colors
+
+body.dark {
+	background-color: $t1_main_background;
+
+	.logo a,
+	.theme-selector h2,
+	.theme-selector label,
+	.output,
+	button[aria-label="delete"],
+	.reset-btn,
+	.equals-btn,
+	footer {
+		color: $text_white;
+	}
+
+	.output {
+		background-color: $dark_screen_background;
+	}
+
+	.calculator-grid {
+		background-color: $t1_toggle_background;
+	}
+}

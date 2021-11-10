@@ -1,0 +1,62 @@
+// dark theme-----------
+
+// backgrounds
+$t1_main_background: hsl(222, 26%, 31%);
+// toggle keypad background
+$t1_toggle_background: hsl(223, 31%, 20%);
+$dark_screen_background: hsl(224, 36%, 15%);
+
+// keys
+$t1_background: hsl(225, 21%, 49%);
+$t1_shadow: hsl(224, 28%, 35%);
+// toggle and equals background
+$t1_toggle: hsl(6, 63%, 50%);
+$t1_key_shadow: hsl(28, 16%, 65%);
+// hover key
+$t1_background_hover: hsl(30, 25%, 89%);
+$t1_shadow_hover: hsl(28, 16%, 65%);
+
+// text
+$text_dark: hsl(221, 14%, 31%);
+$text_white: hsl(0, 0, 100%);
+
+// light theme-------------------
+
+// backgrounds
+$t2_main_background: hsl(0, 0%, 90%);
+$t2_toggle_background: hsl(0, 5%, 81%);
+$t2_screen_background: hsl(0, 0%, 93%);
+
+// keys
+$t2_background: hsl(185, 42%, 37%);
+$t2_shadow: hsl(185, 58%, 25%);
+// toggle and equals background
+$t2_toggle: hsl(25, 98%, 40%);
+$t2_key_shadow: hsl(185, 58%, 25%);
+// hover key
+$t2_background_hover: hsl(45, 7%, 89%);
+$t2_shadow_hover: hsl(35, 11%, 61%);
+
+// text
+$text_dark_yellow: hsl(60, 10%, 19%);
+
+// purple theme-------------------
+
+// backgrounds
+$t3_background: hsl(268, 75%, 9%);
+$t3_toggle_background: hsl(268, 71%, 12%);
+
+// keys
+
+$t3_background: hsl(281, 89%, 26%);
+$t3_shadow: hsl(285, 91%, 52%);
+// toggle and equals background
+$t3_toggle: hsl(176, 100%, 44%);
+$t3_key_shadow: hsl(177, 92%, 70%);
+// hover key
+$t3_background_hover: hsl(268, 47%, 21%);
+$t3_shadow_hover: hsl(290, 70%, 36%);
+
+// text
+$text_dark_blue: hsl(198, 20%, 13%);
+$text_yellow: hsl(52, 100%, 62%);

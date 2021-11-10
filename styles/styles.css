@@ -1,0 +1,137 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body.dark {
+  background-color: #3a4764;
+}
+
+body.dark .logo a,
+body.dark .theme-selector h2,
+body.dark .theme-selector label,
+body.dark .output,
+body.dark button[aria-label="delete"],
+body.dark .reset-btn,
+body.dark .equals-btn,
+body.dark footer {
+  color: white;
+}
+
+body.dark .output {
+  background-color: #182034;
+}
+
+body.dark .calculator-grid {
+  background-color: #232c43;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 24px;
+}
+
+#wrapper {
+  max-width: 540px;
+  margin: 28px auto 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header legend {
+  display: contents;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+header div:nth-child(3) {
+  margin: 0 10px;
+}
+
+header h2 {
+  margin-right: 20px;
+}
+
+header h2,
+header label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.output {
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 36px 0 24px;
+  padding: 26px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calculator-grid {
+  padding: 24px 24px;
+  border-radius: 10px;
+}
+
+.calculator-grid button {
+  font-weight: bold;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  padding: 11px 0;
+}
+/*# sourceMappingURL=styles.css.map */
