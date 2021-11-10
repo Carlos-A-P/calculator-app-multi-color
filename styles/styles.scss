@@ -44,6 +44,7 @@ header {
 	div {
 		display: flex;
 		flex-direction: column-reverse;
+		align-items: center;
 	}
 
 	div:nth-child(3) {
