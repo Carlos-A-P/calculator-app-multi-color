@@ -5,6 +5,13 @@
 
 .attribution a {
   color: #3e52a3;
+  text-decoration: none;
+}
+
+body,
+button {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 body.dark {
@@ -28,6 +35,154 @@ body.dark .output {
 
 body.dark .calculator-grid {
   background-color: #232c43;
+}
+
+body.dark .calculator-grid button {
+  background-color: #eae3dc;
+  color: #444b5a;
+  -webkit-box-shadow: inset 0 -5px #b4a597;
+          box-shadow: inset 0 -5px #b4a597;
+}
+
+body.dark .calculator-grid button:hover,
+body.dark .calculator-grid button:focus {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+body.dark button[aria-label="delete"],
+body.dark button.reset-btn {
+  background-color: #637097;
+  color: white;
+  -webkit-box-shadow: inset 0 -5px #404e72;
+          box-shadow: inset 0 -5px #404e72;
+}
+
+body.dark button.equals-btn {
+  background-color: #d03f2f;
+  color: white;
+  -webkit-box-shadow: inset 0 -5px #93261a;
+          box-shadow: inset 0 -5px #93261a;
+}
+
+body.dark footer a {
+  color: #eae3dc;
+}
+
+body.dark footer a:hover,
+body.dark footer a:focus {
+  color: #d03f2f;
+  -webkit-filter: brightness(190%);
+          filter: brightness(190%);
+}
+
+body.light {
+  background-color: #e6e6e6;
+}
+
+body.light .logo a,
+body.light .theme-selector h2,
+body.light .theme-selector label,
+body.light .output,
+body.light button[aria-label="delete"],
+body.light .reset-btn,
+body.light .equals-btn,
+body.light footer {
+  color: #35352c;
+}
+
+body.light .output {
+  background-color: #ededed;
+}
+
+body.light .calculator-grid {
+  background-color: #d1cccc;
+}
+
+body.light .calculator-grid button {
+  background-color: #e5e4e1;
+  color: #444b5a;
+  -webkit-box-shadow: inset 0 -5px #a69d91;
+          box-shadow: inset 0 -5px #a69d91;
+}
+
+body.light .calculator-grid button:hover,
+body.light .calculator-grid button:focus {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+body.light button[aria-label="delete"],
+body.light button.reset-btn {
+  background-color: #377f86;
+  color: white;
+  -webkit-box-shadow: inset 0 -5px #1b5f65;
+          box-shadow: inset 0 -5px #1b5f65;
+}
+
+body.light button.equals-btn {
+  background-color: #ca5502;
+  color: white;
+  -webkit-box-shadow: inset 0 -5px #893901;
+          box-shadow: inset 0 -5px #893901;
+}
+
+body.light footer a {
+  color: #ca5502;
+}
+
+body.purple {
+  background-color: #160628;
+}
+
+body.purple .logo a,
+body.purple .theme-selector h2,
+body.purple .theme-selector label,
+body.purple .output,
+body.purple button[aria-label="delete"],
+body.purple .reset-btn,
+body.purple .equals-btn,
+body.purple footer {
+  color: #ffe53d;
+}
+
+body.purple .output,
+body.purple .calculator-grid {
+  background-color: #1d0934;
+}
+
+body.purple .calculator-grid button {
+  background-color: #341c4f;
+  color: #ffe53d;
+  -webkit-box-shadow: inset 0 -5px #871c9c;
+          box-shadow: inset 0 -5px #871c9c;
+}
+
+body.purple .calculator-grid button:hover,
+body.purple .calculator-grid button:focus {
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+body.purple button[aria-label="delete"],
+body.purple button.reset-btn {
+  background-color: #58077d;
+  color: white;
+  -webkit-box-shadow: inset 0 -5px #bc15f4;
+          box-shadow: inset 0 -5px #bc15f4;
+}
+
+body.purple button.equals-btn {
+  background-color: #00e0d1;
+  color: #1b2428;
+  -webkit-box-shadow: inset 0 -5px #6cf9f2;
+          box-shadow: inset 0 -5px #6cf9f2;
+}
+
+body.purple footer a {
+  color: #00e0d1;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 *,
@@ -106,6 +261,10 @@ header label {
   font-weight: bold;
 }
 
+header label:hover {
+  cursor: pointer;
+}
+
 .output {
   height: 88px;
   display: -webkit-box;
@@ -136,5 +295,6 @@ header label {
   border: none;
   border-radius: 5px;
   padding: 11px 0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -60,6 +60,10 @@ header {
 		font-size: 12px;
 		font-weight: bold;
 	}
+
+	label:hover {
+		cursor: pointer;
+	}
 }
 
 .output {
@@ -85,5 +89,6 @@ header {
 		border: none;
 		border-radius: 5px;
 		padding: 11px 0;
+		cursor: pointer;
 	}
 }

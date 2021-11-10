@@ -1,7 +1,11 @@
 @import "colors";
 
-// dark theme colors
+body,
+button {
+	transition: all 0.5s ease-in-out;
+}
 
+// dark theme colors
 body.dark {
 	background-color: $t1_main_background;
 
@@ -22,5 +26,141 @@ body.dark {
 
 	.calculator-grid {
 		background-color: $t1_toggle_background;
+	}
+
+	.calculator-grid button {
+		background-color: $t1_background_button;
+		color: $text_dark;
+		box-shadow: inset 0 -5px $t1_shadow_button;
+	}
+
+	.calculator-grid button:hover,
+	.calculator-grid button:focus {
+		filter: brightness(150%);
+	}
+
+	button[aria-label="delete"],
+	button.reset-btn {
+		background-color: $t1_background;
+		color: $text_white;
+		box-shadow: inset 0 -5px $t1_shadow;
+	}
+
+	button.equals-btn {
+		background-color: $t1_toggle;
+		color: $text_white;
+		box-shadow: inset 0 -5px $t1_key_shadow;
+	}
+
+	footer a {
+		color: $t1_background_button;
+	}
+
+	footer a:hover,
+	footer a:focus {
+		color: $t1_toggle;
+		filter: brightness(190%);
+	}
+}
+
+// light theme colors
+body.light {
+	background-color: $t2_main_background;
+
+	.logo a,
+	.theme-selector h2,
+	.theme-selector label,
+	.output,
+	button[aria-label="delete"],
+	.reset-btn,
+	.equals-btn,
+	footer {
+		color: $text_dark_yellow;
+	}
+
+	.output {
+		background-color: $t2_screen_background;
+	}
+
+	.calculator-grid {
+		background-color: $t2_toggle_background;
+	}
+
+	.calculator-grid button {
+		background-color: $t2_background_button;
+		color: $text_dark;
+		box-shadow: inset 0 -5px $t2_shadow_button;
+	}
+
+	.calculator-grid button:hover,
+	.calculator-grid button:focus {
+		filter: brightness(150%);
+	}
+
+	button[aria-label="delete"],
+	button.reset-btn {
+		background-color: $t2_background;
+		color: $text_white;
+		box-shadow: inset 0 -5px $t2_shadow;
+	}
+
+	button.equals-btn {
+		background-color: $t2_toggle;
+		color: $text_white;
+		box-shadow: inset 0 -5px $t2_key_shadow;
+	}
+
+	footer a {
+		color: $t2_toggle;
+	}
+}
+
+// purple theme colors
+body.purple {
+	background-color: $t3_main_background;
+
+	.logo a,
+	.theme-selector h2,
+	.theme-selector label,
+	.output,
+	button[aria-label="delete"],
+	.reset-btn,
+	.equals-btn,
+	footer {
+		color: $text_yellow;
+	}
+
+	.output,
+	.calculator-grid {
+		background-color: $t3_toggle_background;
+	}
+
+	.calculator-grid button {
+		background-color: $t3_background_button;
+		color: $text_yellow;
+		box-shadow: inset 0 -5px $t3_shadow_button;
+	}
+
+	.calculator-grid button:hover,
+	.calculator-grid button:focus {
+		filter: brightness(150%);
+	}
+
+	button[aria-label="delete"],
+	button.reset-btn {
+		background-color: $t3_background;
+		color: $text_white;
+		box-shadow: inset 0 -5px $t3_shadow;
+	}
+
+	button.equals-btn {
+		background-color: $t3_toggle;
+		color: $text_dark_blue;
+		box-shadow: inset 0 -5px $t3_key_shadow;
+	}
+
+	footer a {
+		color: $t3_toggle;
+		filter: brightness(90%);
 	}
 }
