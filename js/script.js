@@ -1,3 +1,7 @@
+import { setTheme } from "./functions/theme.js";
+
+// setInitialTheme();
+
 class Calculator {
 	//where to display our display text
 	constructor(currentOperandTextElement) {
@@ -146,4 +150,15 @@ allClearButton.addEventListener("click", (button) => {
 deleteButton.addEventListener("click", (button) => {
 	calculator.clear();
 	calculator.updateDisplay();
+});
+
+const inputs = document.querySelectorAll('input[name="theme"]');
+
+// default theme
+setTheme("dark");
+
+inputs.forEach((input) => {
+	input.addEventListener("input", (e) => {
+		setTheme(e.target.value);
+	});
 });

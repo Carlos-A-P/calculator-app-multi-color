@@ -7,11 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;700;800;900&family=Kumbh+Sans:wght@400;700&family=Spartan:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>CPWD | Calculator app</title>
 </head>
-<body class="purple">
+<body>
   <div id="wrapper">
     <header>
       <h1 class="logo"><a href="https://github.com/Carlos-A-P/calculator-app-multi-color" target="_blank">calc</a></h1>
@@ -19,22 +18,22 @@
         <fieldset class="theme-selector">
           <legend><h2>THEME</h2></legend>
           <div>
-            <input type="radio" name="theme" id="dark" value="dark-theme" aria-label="Dark theme" checked>
+            <input type="radio" name="theme" id="dark" value="dark" aria-label="Dark theme" checked>
             <label for="dark">1</label>            
           </div>
           <div>
-            <input type="radio" name="theme" id="light" value="light-theme" aria-label="Light theme">
+            <input type="radio" name="theme" id="light" value="light" aria-label="Light theme">
             <label for="light">2</label>            
           </div>
           <div>
-            <input type="radio" name="theme" id="purple" value="purple-theme" aria-label="Purple theme">
+            <input type="radio" name="theme" id="purple" value="purple" aria-label="Purple theme">
             <label for="purple">3</label>            
           </div>
         </fieldset>
       </div>
     </header>
     <main>
-      <div class="output"><p data-current-operand tabindex="0" aria-label="output">180</p></div>
+      <div class="output"><p data-current-operand tabindex="0" aria-label="output">0</p></div>
       <div class="calculator-grid" aria-label="Calculator Keypad">
         <button data-number>7</button>
         <button data-number>8</button>
@@ -57,21 +56,22 @@
       </div>
       <div class="modal" aria-label="Calculator keypad instructions" tabindex="0" style='display: none'>
         <h3 class="modal-header">Keypad instructions</h2>
-        <p>To navigate around the keypad, use the <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys or the arrow keys on the keyboard and press space to activate the key</p>
-        <ul>
-          <li>The <kbd>W</kbd> key allows you to move up</li>
-          <li>The <kbd>A</kbd> key allows you to move left</li>
-          <li>The <kbd>S</kbd> key allows you to move down</li>
-          <li>The <kbd>D</kbd> key allows you to move right</li>
-        </ul>
-        <p>Lastly, you can use the number keypad to input number values and use the <kbd>Enter</kbd> button to compute</p>
-        <button>Close</button>
-      </div>
-    </main>
-  </div>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/profile/Carlos-A-P" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://carlospwd.netlify.app/" target="_blank">Carlos Perez</a>.
-  </footer>
-</body>
+          <p>To navigate around the keypad, use the <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys or the arrow keys on the keyboard and press space to activate the key</p>
+          <ul>
+            <li>The <kbd>W</kbd> key allows you to move up</li>
+            <li>The <kbd>A</kbd> key allows you to move left</li>
+            <li>The <kbd>S</kbd> key allows you to move down</li>
+            <li>The <kbd>D</kbd> key allows you to move right</li>
+          </ul>
+          <p>Lastly, you can use the number keypad to input number values and use the <kbd>Enter</kbd> button to compute</p>
+          <button>Close</button>
+        </div>
+      </main>
+    </div>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/profile/Carlos-A-P" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://carlospwd.netlify.app/" target="_blank">Carlos Perez</a>.
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>

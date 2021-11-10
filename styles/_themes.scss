@@ -2,7 +2,7 @@
 
 body,
 button {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 // dark theme colors
@@ -161,6 +161,9 @@ body.purple {
 
 	footer a {
 		color: $t3_toggle;
-		filter: brightness(90%);
+	}
+
+	footer a:hover {
+		filter: brightness(110%);
 	}
 }

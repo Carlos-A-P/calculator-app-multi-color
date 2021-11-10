@@ -1,0 +1,8 @@
+// @mixin: essentially you can pass in content throughout any style page.
+
+@mixin mobile {
+	@media screen and (max-width: 375px) {
+		// whatever i pass in here will be getting the styles at that particular breakpoint
+		@content;
+	}
+}
