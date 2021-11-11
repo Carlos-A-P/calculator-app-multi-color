@@ -35,25 +35,25 @@ class Calculator {
 	// this is what is going to happen every time the user clicks on a operation
 	chooseOperation(operation) {
 		//if the current operand is empty don't return any further code
-		if (this.currentOperand === "") return;
-		//if the previous operand is not equal to an empty string
-		//we want to do the computation
-		if (this.previousOperand !== "") {
+		if (this.currentOperand !== "") {
 			this.compute();
+		} else {
+			return;
 		}
+
 		//set the operation
 		this.operation = operation;
 		//cycle
-		this.previousOperand = this.currentOperand;
-		this.currentOperand = "";
+		// this.previousOperand = this.currentOperand;
+		// this.currentOperand = "";
 	}
 
 	compute() {
 		let computation;
-		const prev = parseFloat(this.previousOperand);
+		// const prev = parseFloat(this.previousOperand);
 		const current = parseFloat(this.currentOperand);
 		//if there is no number just cancel the function
-		if (isNaN(prev) || isNaN(current)) return;
+		if (isNaN(current)) return;
 		switch (this.operation) {
 			case "+":
 				computation = prev + current;

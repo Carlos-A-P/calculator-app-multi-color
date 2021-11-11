@@ -200,13 +200,18 @@ body.purple footer a:hover {
 }
 
 body {
-  min-height: 100vh;
   padding: 0 24px;
 }
 
 #wrapper {
   max-width: 540px;
-  margin: 28px auto 2rem;
+  margin: 96px auto 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  #wrapper {
+    margin: 28px auto 2rem;
+  }
 }
 
 .logo a {
@@ -268,7 +273,6 @@ header label:hover {
 }
 
 .output {
-  height: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,12 +282,19 @@ header label:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   margin: 36px 0 24px;
-  padding: 26px 24px;
+  padding: 38px 32px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+  .output {
+    font-size: 32px;
+    padding: 26px 24px;
+  }
 }
 
 .calculator-grid {
@@ -296,8 +307,8 @@ header label:hover {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-grid-columns: (minmax(64px, 100px))[4];
-      grid-template-columns: repeat(4, minmax(64px, 100px));
+  -ms-grid-columns: (minmax(auto, 100px))[4];
+      grid-template-columns: repeat(4, minmax(auto, 100px));
   -ms-grid-rows: (64px)[5];
       grid-template-rows: repeat(5, 64px);
   gap: 25px;
@@ -308,7 +319,7 @@ header label:hover {
     padding: 24px;
     -ms-grid-rows: (60px)[5];
         grid-template-rows: repeat(5, 60px);
-    gap: 13px;
+    gap: 3vw;
   }
 }
 

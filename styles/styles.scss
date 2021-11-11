@@ -15,13 +15,16 @@
 }
 
 body {
-	min-height: 100vh;
 	padding: 0 24px;
 }
 
 #wrapper {
 	max-width: 540px;
-	margin: 28px auto 2rem;
+	margin: 96px auto 2rem;
+
+	@include mobile {
+		margin: 28px auto 2rem;
+	}
 }
 
 .logo a {
@@ -68,16 +71,21 @@ header {
 }
 
 .output {
-	height: 88px;
+	// height: 88px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	font-size: 32px;
+	font-size: 48px;
 	font-weight: bold;
 	margin: 36px 0 24px;
-	padding: 26px 24px;
+	padding: 38px 32px;
 	border-radius: 10px;
 	overflow: hidden;
+
+	@include mobile {
+		font-size: 32px;
+		padding: 26px 24px;
+	}
 }
 
 .calculator-grid {
@@ -86,14 +94,14 @@ header {
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	grid-template-columns: repeat(4, minmax(64px, 100px));
+	grid-template-columns: repeat(4, minmax(auto, 100px));
 	grid-template-rows: repeat(5, 64px);
 	gap: 25px;
 
 	@include mobile {
 		padding: 24px;
 		grid-template-rows: repeat(5, 60px);
-		gap: 13px;
+		gap: 3vw;
 	}
 
 	button {
