@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js" integrity="sha512-+lwWRCGAWhCLRPruF7ruYxRlMQuRD1H9C/Pc/HYcuxachoLufBO7OU66bfFnVsFaHQj3S/CunEimw8alVvkl+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,62 +11,52 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <title>CPWD | Calculator app</title>
 </head>
-<body>
+<body class="dark">
   <div id="wrapper">
     <header>
       <h1 class="logo"><a href="https://github.com/Carlos-A-P/calculator-app-multi-color" target="_blank">calc</a></h1>
       <div class="right-header">  
         <fieldset class="theme-selector">
           <legend><h2>THEME</h2></legend>
-          <div>
-            <input type="radio" name="theme" id="dark" value="dark" aria-label="Dark theme" checked>
-            <label for="dark">1</label>            
-          </div>
-          <div>
-            <input type="radio" name="theme" id="light" value="light" aria-label="Light theme">
-            <label for="light">2</label>            
-          </div>
-          <div>
-            <input type="radio" name="theme" id="purple" value="purple" aria-label="Purple theme">
-            <label for="purple">3</label>            
+          <div class="theme-wrap">
+              <input type="radio" name="theme" id="dark" value="dark" aria-label="Dark theme" checked>
+              <label for="dark">1</label>            
+              <input type="radio" name="theme" id="light" value="light" aria-label="Light theme">
+              <label for="light">2</label>            
+              <input type="radio" name="theme" id="purple" value="purple" aria-label="Purple theme">
+              <label for="purple">3</label>            
+            <span class="slider round">
+            </span>
           </div>
         </fieldset>
       </div>
     </header>
     <main>
       <div class="output"><p data-display tabindex="0" aria-label="output">0</p></div>
-      <div class="calculator-grid" aria-label="Calculator Keypad">
-        <button data-button class="number">7</button>
-        <button data-button class="number">8</button>
-        <button data-button class="number">9</button>
-        <button data-button class="delete" aria-label="delete">DEL</button>
-        <button data-button class="number">4</button>
-        <button data-button class="number">5</button>
-        <button data-button class="number">6</button>
-        <button class="operator" data-button>+</button>
-        <button data-button class="number">1</button>
-        <button data-button class="number">2</button>
-        <button data-button class="number">3</button>
-        <button data-button class="operator" aria-label="minus">-</button>
-        <button data-button>.</button>
-        <button data-button class="number">0</button>
-        <button data-button class="operator" aria-label="divide">/</button>
-        <button data-button class="operator" aria-label="multiply">x</button>
-        <button data-button class="span-two reset-btn">RESET</button>
-        <button data-button class="span-two equals-btn">=</button>
-      </div>
-      <div class="modal" aria-label="Calculator keypad instructions" tabindex="0" style='display: none'>
-        <h3 class="modal-header">Keypad instructions</h2>
-          <p>To navigate around the keypad, use the <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys or the arrow keys on the keyboard and press space to activate the key</p>
-          <ul>
-            <li>The <kbd>W</kbd> key allows you to move up</li>
-            <li>The <kbd>A</kbd> key allows you to move left</li>
-            <li>The <kbd>S</kbd> key allows you to move down</li>
-            <li>The <kbd>D</kbd> key allows you to move right</li>
-          </ul>
-          <p>Lastly, you can use the number keypad to input number values and use the <kbd>Enter</kbd> button to compute</p>
-          <button>Close</button>
-        </div>
+      <ul id="list"  class="calculator-grid" aria-label="Calculator Keypad">
+
+
+        <li><button data-number>7</button></li>
+        <li><button data-number>8</button></li>
+        <li><button data-number>9</button></li>
+        <li><button data-delete aria-label="delete">DEL</button></li>
+        <li><button data-number>4</button></li>
+        <li><button data-number>5</button></li>
+        <li><button data-number>6</button></li>
+        <li><button data-operation>+</button></li>
+        <li><button data-number>1</button></li>
+        <li><button data-number>2</button></li>
+        <li><button data-number>3</button></li>
+        <li><button data-operation aria-label="minus">-</button></li>
+        <li><button data-number>.</button></li>
+        <li><button data-number>0</button></li>
+        <li><button data-operation aria-label="divide">/</button></li>
+        <li><button data-operation aria-label="multiply">x</button></li>
+        <li class="span-two"><button data-all-clear class="reset-btn">RESET</button></li>
+        <li class="span-two"><button data-equals>=</button></li>
+      
+      
+      </ul>
       </main>
     </div>
     <footer class="attribution">

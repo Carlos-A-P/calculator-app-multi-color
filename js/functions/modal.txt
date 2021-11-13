@@ -1,0 +1,12 @@
+      <div class="modal" aria-label="Calculator keypad instructions" tabindex="0" style='display: none'>
+        <h3 class="modal-header">Keypad instructions</h2>
+          <p>To navigate around the keypad, use the <kbd>W</kbd>, <kbd>A</kbd>, <kbd>S</kbd>, <kbd>D</kbd> keys or the arrow keys on the keyboard and press space to activate the key</p>
+          <ul>
+            <li>The <kbd>W</kbd> key allows you to move up</li>
+            <li>The <kbd>A</kbd> key allows you to move left</li>
+            <li>The <kbd>S</kbd> key allows you to move down</li>
+            <li>The <kbd>D</kbd> key allows you to move right</li>
+          </ul>
+          <p>Lastly, you can use the number keypad to input number values and use the <kbd>Enter</kbd> button to compute</p>
+          <button>Close</button>
+        </div>

@@ -20,6 +20,19 @@ body.dark {
 		color: $text_white;
 	}
 
+	.slider {
+		background-color: $t1_toggle_background;
+	}
+
+	.slider:before {
+		background-color: $t1_toggle;
+	}
+
+	input:hover ~ .slider:before,
+	input:focus ~ .slider:before {
+		filter: brightness(150%);
+	}
+
 	.output {
 		background-color: $dark_screen_background;
 	}
@@ -78,6 +91,19 @@ body.light {
 		color: $text_dark_yellow;
 	}
 
+	.slider {
+		background-color: $t2_toggle_background;
+	}
+
+	.slider:before {
+		background-color: $t2_toggle;
+	}
+
+	input:hover ~ .slider:before,
+	input:focus ~ .slider:before {
+		filter: brightness(150%);
+	}
+
 	.output {
 		background-color: $t2_screen_background;
 	}
@@ -128,6 +154,19 @@ body.purple {
 	.equals-btn,
 	footer {
 		color: $text_yellow;
+	}
+
+	.slider {
+		background-color: $t3_toggle_background;
+	}
+
+	.slider:before {
+		background-color: $t3_toggle;
+	}
+
+	input:hover ~ .slider:before,
+	input:focus ~ .slider:before {
+		filter: brightness(150%);
 	}
 
 	.output,
