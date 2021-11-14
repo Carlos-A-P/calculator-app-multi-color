@@ -10,7 +10,7 @@ body.dark {
 	background-color: $t1_main_background;
 
 	.logo a,
-	.theme-selector h2,
+	.theme-selector legend,
 	.theme-selector label,
 	.output,
 	button[aria-label="delete"],
@@ -81,7 +81,7 @@ body.light {
 	background-color: $t2_main_background;
 
 	.logo a,
-	.theme-selector h2,
+	.theme-selector legend,
 	.theme-selector label,
 	.output,
 	button[aria-label="delete"],
@@ -146,7 +146,7 @@ body.purple {
 	background-color: $t3_main_background;
 
 	.logo a,
-	.theme-selector h2,
+	.theme-selector legend,
 	.theme-selector label,
 	.output,
 	button[aria-label="delete"],

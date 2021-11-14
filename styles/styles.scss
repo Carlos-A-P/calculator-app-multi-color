@@ -39,10 +39,13 @@ header {
 		border: none;
 		display: flex;
 		align-items: flex-end;
+		position: relative;
 	}
 
 	legend {
-		display: contents;
+		position: absolute;
+		bottom: 5px;
+		left: -65px;
 	}
 
 	.theme-wrap {
@@ -94,11 +97,7 @@ header {
 		border-radius: 50%;
 	}
 
-	h2 {
-		margin-right: 20px;
-	}
-
-	h2,
+	legend,
 	label {
 		font-size: 12px;
 		font-weight: bold;

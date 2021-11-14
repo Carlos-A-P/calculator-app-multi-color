@@ -18,7 +18,7 @@ body.dark {
 }
 
 body.dark .logo a,
-body.dark .theme-selector h2,
+body.dark .theme-selector legend,
 body.dark .theme-selector label,
 body.dark .output,
 body.dark button[aria-label="delete"],
@@ -94,7 +94,7 @@ body.light {
 }
 
 body.light .logo a,
-body.light .theme-selector h2,
+body.light .theme-selector legend,
 body.light .theme-selector label,
 body.light .output,
 body.light button[aria-label="delete"],
@@ -163,7 +163,7 @@ body.purple {
 }
 
 body.purple .logo a,
-body.purple .theme-selector h2,
+body.purple .theme-selector legend,
 body.purple .theme-selector label,
 body.purple .output,
 body.purple button[aria-label="delete"],
@@ -280,10 +280,13 @@ header fieldset {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
 header legend {
-  display: contents;
+  position: absolute;
+  bottom: 5px;
+  left: -65px;
 }
 
 header .theme-wrap {
@@ -343,11 +346,7 @@ header .slider:before {
   border-radius: 50%;
 }
 
-header h2 {
-  margin-right: 20px;
-}
-
-header h2,
+header legend,
 header label {
   font-size: 12px;
   font-weight: bold;
