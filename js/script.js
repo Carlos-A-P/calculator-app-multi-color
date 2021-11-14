@@ -65,12 +65,15 @@ class Calculator {
 		this.display = this.display.toString() + number.toString();
 	}
 
-	chooseOperation(operation) {
-		if (this.display === "") this.operation = operation;
-	}
-
 	compute() {
 		let string = this.display;
+		let length = string.length;
+		const operationsValue = ["+", "-", "/", "x"];
+		if (operationsValue.includes(string[length - 1])) {
+			solved = false;
+			return;
+		}
+		console.log(string, string.length, string[length - 1]);
 		let newString = string.replace(/x/g, "*");
 		let answer = math.evaluate(newString);
 		let result = `${Math.round(answer * 100) / 100}`;
@@ -83,34 +86,27 @@ class Calculator {
 }
 
 const displayTextElement = document.querySelector("[data-display]");
-const numberButtons = document.querySelectorAll("[data-number]");
-const operationButtons = document.querySelectorAll("[data-operation]");
+const keyButtons = document.querySelectorAll("[data-key]");
 const equalsButton = document.querySelector("[data-equals]");
 const deleteButton = document.querySelector("[data-delete]");
 const allClearButton = document.querySelector("[data-all-clear]");
 let solved = false;
 
+// new means to create an object
+//EX: calculator.appendNumber() is a function of the object
 const calculator = new Calculator(displayTextElement, solved);
 
-numberButtons.forEach((button) => {
+keyButtons.forEach((button) => {
 	button.addEventListener("click", () => {
-		calculator.appendNumber(button.innerText);
-		calculator.updateDisplay();
-	});
-});
-
-operationButtons.forEach((button) => {
-	button.addEventListener("click", () => {
-		calculator.chooseOperation(button.innerText);
 		calculator.appendNumber(button.innerText);
 		calculator.updateDisplay();
 	});
 });
 
 equalsButton.addEventListener("click", (button) => {
+	solved = true;
 	calculator.compute();
 	calculator.updateDisplay();
-	solved = true;
 });
 
 allClearButton.addEventListener("click", (button) => {
