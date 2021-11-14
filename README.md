@@ -37,7 +37,7 @@ Your users should be able to:
 
 ### What I learned
 
-- This was a fun challenge and I learned a lot about styling with Sass. I also used Javascript classes to set up the calculator. I also separated the theme files into another folder in order to add some organization into my project. I then imported the theme file into my script file in order to reduce src links in my HTML. I also wanted to focus more on accessibility this challenge and tried to implement a feature where the user can navigate the keypad with the W,A,S,D keys but was unable to finish. Overall this is still a functional and accessible calculator and I want to improve it's features later on.
+- This was a fun challenge and I learned a lot about styling with Sass. I also used Javascript classes to set up the calculator. I also separated the theme files into another folder in order to add some organization into my project. I then imported the theme file into my script file in order to reduce src links in my HTML. I also wanted to focus more on accessibility this challenge by using proper HTML5 markup. I also tried to implement a feature where the user can navigate the keypad with the W,A,S,D keys but was unable to finish. Overall this is still a functional and accessible calculator and I want to improve it's features later on.
 
 - I wanted to use a class for my calculator becuase I learned that classes encapsulate data and functionality
 - I learned that classes are like cookie cutters/ template
